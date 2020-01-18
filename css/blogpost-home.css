@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Caslon+Text|Montserrat:500&display=swap");
+
+:root {
+  --background-color: #75A577;
+  --heading-color: #B39C4D;
+  --text-color: #504B3A;
+  --accent1-color: #3C6E71;
+  --heading-font: "'Libre Caslon Text', serif";
+  --paragraph-font: "'Montserrat', sans-serif";
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--accent1-color);
+}
+
+header > h1 {
+  color: var(--background-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--text-color);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+.colors th {
+  background-color: var(--accent1-color);
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--background-color);
+}
+
+.secondary {
+  background-color: var(--text-color);
+}
+
+.accent1 {
+  background-color: var(--heading-color);
+}
+
+.accent2 {
+  background-color: var(--accent1-color);
+}
+
+nav {
+  background-color: var(--heading-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  padding: 1em;
+  min-width: 70px;
+}
+
+
+nav a:link,
+nav a:visited {
+  color: var(--accent1-color);
+}
+
+nav a:hover {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
